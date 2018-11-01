@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Sj4-jm-hMk">
+            <objects>
+                <viewController storyboardIdentifier="HomeCoordinator" id="Hl1-bG-O2o" customClass="HomeViewController" customModule="RoutingWithMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUm-LX-2a3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYY-Bn-Gv2">
+                                <rect key="frame" x="112" y="298.5" width="151" height="30"/>
+                                <state key="normal" title="Green View Controller"/>
+                                <connections>
+                                    <action selector="pushToGreenView:" destination="Hl1-bG-O2o" eventType="touchUpInside" id="eRG-en-Ybz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t25-C3-DKx">
+                                <rect key="frame" x="119" y="338.5" width="136" height="30"/>
+                                <state key="normal" title="Red View Controller"/>
+                                <connections>
+                                    <action selector="pushToRedView:" destination="Hl1-bG-O2o" eventType="touchUpInside" id="fTg-hV-Ksp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t25-C3-DKx" firstAttribute="centerY" secondItem="CUm-LX-2a3" secondAttribute="centerY" constant="20" id="CLg-H6-xjO"/>
+                            <constraint firstItem="OYY-Bn-Gv2" firstAttribute="centerX" secondItem="CUm-LX-2a3" secondAttribute="centerX" id="Qx1-1A-JJX"/>
+                            <constraint firstItem="OYY-Bn-Gv2" firstAttribute="centerY" secondItem="CUm-LX-2a3" secondAttribute="centerY" constant="-20" id="pn6-e5-yp8"/>
+                            <constraint firstItem="t25-C3-DKx" firstAttribute="centerX" secondItem="CUm-LX-2a3" secondAttribute="centerX" id="wNJ-pa-VjQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Amy-Rd-RLl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzW-v8-X2c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="123"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="kR9-hh-vGK">
+            <objects>
+                <viewController storyboardIdentifier="GreenCoordinator" id="WtZ-dB-PrA" customClass="GreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiC-g7-mea">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pox-BS-x1J">
+                                <rect key="frame" x="79" y="319.5" width="218" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41137476090000002" green="0.72542968750000003" blue="0.41690590449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pox-BS-x1J" firstAttribute="centerY" secondItem="jiC-g7-mea" secondAttribute="centerY" id="kd2-x7-VAf"/>
+                            <constraint firstItem="Pox-BS-x1J" firstAttribute="centerX" secondItem="jiC-g7-mea" secondAttribute="centerX" id="xe0-w8-1CP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kw0-Ud-qRp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFk-2f-63C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="126"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="s4g-qD-gCK">
+            <objects>
+                <viewController storyboardIdentifier="RedCoordinator" id="ixI-mP-AYY" customClass="RedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZW-tW-fM7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-r1-1Lx">
+                                <rect key="frame" x="89" y="319" width="197" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28735074630000002" blue="0.1860593213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GgY-r1-1Lx" firstAttribute="centerY" secondItem="nZW-tW-fM7" secondAttribute="centerY" id="4kX-8q-a8j"/>
+                            <constraint firstItem="GgY-r1-1Lx" firstAttribute="centerX" secondItem="nZW-tW-fM7" secondAttribute="centerX" id="bXM-Sf-qUA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aLK-69-lyB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDs-7H-PBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="123"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290BA70121805EE70021A82A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA70021805EE70021A82A /* AppDelegate.swift */; };
+		290BA70321805EE70021A82A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA70221805EE70021A82A /* ViewController.swift */; };
+		290BA70621805EE70021A82A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290BA70421805EE70021A82A /* Main.storyboard */; };
+		290BA70821805EE80021A82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290BA70721805EE80021A82A /* Assets.xcassets */; };
+		290BA70B21805EE80021A82A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290BA70921805EE80021A82A /* LaunchScreen.storyboard */; };
+		290BA71621805EE80021A82A /* RoutingWithReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA71521805EE80021A82A /* RoutingWithReduxTests.swift */; };
+		290BA72121805EE80021A82A /* RoutingWithReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA72021805EE80021A82A /* RoutingWithReduxUITests.swift */; };
+		290BA730218061CD0021A82A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA72F218061CD0021A82A /* GreenViewController.swift */; };
+		290BA732218061D90021A82A /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA731218061D90021A82A /* RedViewController.swift */; };
+		290BA738218063AD0021A82A /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA737218063AD0021A82A /* RoutingAction.swift */; };
+		290BA73B218063B80021A82A /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA739218063B80021A82A /* RoutingState.swift */; };
+		290BA73C218063B80021A82A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA73A218063B80021A82A /* AppState.swift */; };
+		290BA73F218063EF0021A82A /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA73D218063EE0021A82A /* AppReducer.swift */; };
+		290BA740218063EF0021A82A /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA73E218063EF0021A82A /* RoutingReducer.swift */; };
+		290BA7422180645A0021A82A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BA741218064590021A82A /* AppRouter.swift */; };
+		295A922D5A39DD83193CB6A0 /* Pods_RoutingWithReduxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC80AA63BB515AEE6A581F56 /* Pods_RoutingWithReduxUITests.framework */; };
+		8253DD6B49E4AEBA31BB8530 /* Pods_RoutingWithReduxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2ABEC5310F44F2E2E82FCD /* Pods_RoutingWithReduxTests.framework */; };
+		FB9035B4A1C91D5A29E55CA1 /* Pods_RoutingWithRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BECB2AEE69C47003CC2F75 /* Pods_RoutingWithRedux.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		290BA71221805EE80021A82A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290BA6F521805EE70021A82A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290BA6FC21805EE70021A82A;
+			remoteInfo = RoutingWithRedux;
+		};
+		290BA71D21805EE80021A82A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290BA6F521805EE70021A82A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290BA6FC21805EE70021A82A;
+			remoteInfo = RoutingWithRedux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098AE9748001D2D60BEF64A8 /* Pods-RoutingWithReduxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithReduxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithReduxTests/Pods-RoutingWithReduxTests.release.xcconfig"; sourceTree = "<group>"; };
+		18FCC30B195E54D18767EF8E /* Pods-RoutingWithReduxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithReduxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithReduxTests/Pods-RoutingWithReduxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B2ABEC5310F44F2E2E82FCD /* Pods_RoutingWithReduxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoutingWithReduxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290BA6FD21805EE70021A82A /* RoutingWithRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutingWithRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290BA70021805EE70021A82A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		290BA70221805EE70021A82A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		290BA70521805EE70021A82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		290BA70721805EE80021A82A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		290BA70A21805EE80021A82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		290BA70C21805EE80021A82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290BA71121805EE80021A82A /* RoutingWithReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingWithReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290BA71521805EE80021A82A /* RoutingWithReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingWithReduxTests.swift; sourceTree = "<group>"; };
+		290BA71721805EE80021A82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290BA71C21805EE80021A82A /* RoutingWithReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingWithReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290BA72021805EE80021A82A /* RoutingWithReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingWithReduxUITests.swift; sourceTree = "<group>"; };
+		290BA72221805EE80021A82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290BA72F218061CD0021A82A /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		290BA731218061D90021A82A /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		290BA737218063AD0021A82A /* RoutingAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		290BA739218063B80021A82A /* RoutingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
+		290BA73A218063B80021A82A /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		290BA73D218063EE0021A82A /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		290BA73E218063EF0021A82A /* RoutingReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
+		290BA741218064590021A82A /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		477678D79B6BFA6AE3EBB95D /* Pods-RoutingWithReduxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithReduxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithReduxUITests/Pods-RoutingWithReduxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7130F405843D2B07EADFDE3D /* Pods-RoutingWithRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithRedux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithRedux/Pods-RoutingWithRedux.debug.xcconfig"; sourceTree = "<group>"; };
+		C7BECB2AEE69C47003CC2F75 /* Pods_RoutingWithRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoutingWithRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC80AA63BB515AEE6A581F56 /* Pods_RoutingWithReduxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoutingWithReduxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE41B3B9FD003AFD2B1FAEC4 /* Pods-RoutingWithReduxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithReduxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithReduxUITests/Pods-RoutingWithReduxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F6276624D86C872CB077F1A8 /* Pods-RoutingWithRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoutingWithRedux.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoutingWithRedux/Pods-RoutingWithRedux.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		290BA6FA21805EE70021A82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9035B4A1C91D5A29E55CA1 /* Pods_RoutingWithRedux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA70E21805EE80021A82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8253DD6B49E4AEBA31BB8530 /* Pods_RoutingWithReduxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA71921805EE80021A82A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295A922D5A39DD83193CB6A0 /* Pods_RoutingWithReduxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290BA6F421805EE70021A82A = {
+			isa = PBXGroup;
+			children = (
+				290BA6FF21805EE70021A82A /* RoutingWithRedux */,
+				290BA71421805EE80021A82A /* RoutingWithReduxTests */,
+				290BA71F21805EE80021A82A /* RoutingWithReduxUITests */,
+				290BA6FE21805EE70021A82A /* Products */,
+				6F235C3FD91EC6FE1D276953 /* Pods */,
+				C7CA9A28C1D2305C0C1D1B09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		290BA6FE21805EE70021A82A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				290BA6FD21805EE70021A82A /* RoutingWithRedux.app */,
+				290BA71121805EE80021A82A /* RoutingWithReduxTests.xctest */,
+				290BA71C21805EE80021A82A /* RoutingWithReduxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290BA6FF21805EE70021A82A /* RoutingWithRedux */ = {
+			isa = PBXGroup;
+			children = (
+				290BA736218063520021A82A /* Router */,
+				290BA7352180633F0021A82A /* Actions */,
+				290BA734218063390021A82A /* States */,
+				290BA733218063310021A82A /* Reducers */,
+				290BA72E218061B70021A82A /* Controllers */,
+				290BA70021805EE70021A82A /* AppDelegate.swift */,
+				290BA70421805EE70021A82A /* Main.storyboard */,
+				290BA70721805EE80021A82A /* Assets.xcassets */,
+				290BA70921805EE80021A82A /* LaunchScreen.storyboard */,
+				290BA70C21805EE80021A82A /* Info.plist */,
+			);
+			path = RoutingWithRedux;
+			sourceTree = "<group>";
+		};
+		290BA71421805EE80021A82A /* RoutingWithReduxTests */ = {
+			isa = PBXGroup;
+			children = (
+				290BA71521805EE80021A82A /* RoutingWithReduxTests.swift */,
+				290BA71721805EE80021A82A /* Info.plist */,
+			);
+			path = RoutingWithReduxTests;
+			sourceTree = "<group>";
+		};
+		290BA71F21805EE80021A82A /* RoutingWithReduxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				290BA72021805EE80021A82A /* RoutingWithReduxUITests.swift */,
+				290BA72221805EE80021A82A /* Info.plist */,
+			);
+			path = RoutingWithReduxUITests;
+			sourceTree = "<group>";
+		};
+		290BA72E218061B70021A82A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				290BA70221805EE70021A82A /* ViewController.swift */,
+				290BA72F218061CD0021A82A /* GreenViewController.swift */,
+				290BA731218061D90021A82A /* RedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		290BA733218063310021A82A /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				290BA73D218063EE0021A82A /* AppReducer.swift */,
+				290BA73E218063EF0021A82A /* RoutingReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		290BA734218063390021A82A /* States */ = {
+			isa = PBXGroup;
+			children = (
+				290BA73A218063B80021A82A /* AppState.swift */,
+				290BA739218063B80021A82A /* RoutingState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		290BA7352180633F0021A82A /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				290BA737218063AD0021A82A /* RoutingAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		290BA736218063520021A82A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				290BA741218064590021A82A /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6F235C3FD91EC6FE1D276953 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7130F405843D2B07EADFDE3D /* Pods-RoutingWithRedux.debug.xcconfig */,
+				F6276624D86C872CB077F1A8 /* Pods-RoutingWithRedux.release.xcconfig */,
+				18FCC30B195E54D18767EF8E /* Pods-RoutingWithReduxTests.debug.xcconfig */,
+				098AE9748001D2D60BEF64A8 /* Pods-RoutingWithReduxTests.release.xcconfig */,
+				477678D79B6BFA6AE3EBB95D /* Pods-RoutingWithReduxUITests.debug.xcconfig */,
+				EE41B3B9FD003AFD2B1FAEC4 /* Pods-RoutingWithReduxUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7CA9A28C1D2305C0C1D1B09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BECB2AEE69C47003CC2F75 /* Pods_RoutingWithRedux.framework */,
+				1B2ABEC5310F44F2E2E82FCD /* Pods_RoutingWithReduxTests.framework */,
+				CC80AA63BB515AEE6A581F56 /* Pods_RoutingWithReduxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		290BA6FC21805EE70021A82A /* RoutingWithRedux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290BA72521805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithRedux" */;
+			buildPhases = (
+				D9070EAC03CC32B463CF9110 /* [CP] Check Pods Manifest.lock */,
+				290BA6F921805EE70021A82A /* Sources */,
+				290BA6FA21805EE70021A82A /* Frameworks */,
+				290BA6FB21805EE70021A82A /* Resources */,
+				DEEA3030FEE00D21E43ADF04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoutingWithRedux;
+			productName = RoutingWithRedux;
+			productReference = 290BA6FD21805EE70021A82A /* RoutingWithRedux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		290BA71021805EE80021A82A /* RoutingWithReduxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290BA72821805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithReduxTests" */;
+			buildPhases = (
+				F9CF320FA924720288B3A717 /* [CP] Check Pods Manifest.lock */,
+				290BA70D21805EE80021A82A /* Sources */,
+				290BA70E21805EE80021A82A /* Frameworks */,
+				290BA70F21805EE80021A82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290BA71321805EE80021A82A /* PBXTargetDependency */,
+			);
+			name = RoutingWithReduxTests;
+			productName = RoutingWithReduxTests;
+			productReference = 290BA71121805EE80021A82A /* RoutingWithReduxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		290BA71B21805EE80021A82A /* RoutingWithReduxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290BA72B21805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithReduxUITests" */;
+			buildPhases = (
+				A7D8A8985BAB47BE048D927E /* [CP] Check Pods Manifest.lock */,
+				290BA71821805EE80021A82A /* Sources */,
+				290BA71921805EE80021A82A /* Frameworks */,
+				290BA71A21805EE80021A82A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290BA71E21805EE80021A82A /* PBXTargetDependency */,
+			);
+			name = RoutingWithReduxUITests;
+			productName = RoutingWithReduxUITests;
+			productReference = 290BA71C21805EE80021A82A /* RoutingWithReduxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		290BA6F521805EE70021A82A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Venturedive;
+				TargetAttributes = {
+					290BA6FC21805EE70021A82A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					290BA71021805EE80021A82A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 290BA6FC21805EE70021A82A;
+					};
+					290BA71B21805EE80021A82A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 290BA6FC21805EE70021A82A;
+					};
+				};
+			};
+			buildConfigurationList = 290BA6F821805EE70021A82A /* Build configuration list for PBXProject "RoutingWithRedux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 290BA6F421805EE70021A82A;
+			productRefGroup = 290BA6FE21805EE70021A82A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				290BA6FC21805EE70021A82A /* RoutingWithRedux */,
+				290BA71021805EE80021A82A /* RoutingWithReduxTests */,
+				290BA71B21805EE80021A82A /* RoutingWithReduxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		290BA6FB21805EE70021A82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290BA70B21805EE80021A82A /* LaunchScreen.storyboard in Resources */,
+				290BA70821805EE80021A82A /* Assets.xcassets in Resources */,
+				290BA70621805EE70021A82A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA70F21805EE80021A82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA71A21805EE80021A82A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D8A8985BAB47BE048D927E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoutingWithReduxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9070EAC03CC32B463CF9110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoutingWithRedux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEEA3030FEE00D21E43ADF04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RoutingWithRedux/Pods-RoutingWithRedux-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoutingWithRedux/Pods-RoutingWithRedux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CF320FA924720288B3A717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoutingWithReduxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		290BA6F921805EE70021A82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290BA73B218063B80021A82A /* RoutingState.swift in Sources */,
+				290BA738218063AD0021A82A /* RoutingAction.swift in Sources */,
+				290BA73C218063B80021A82A /* AppState.swift in Sources */,
+				290BA732218061D90021A82A /* RedViewController.swift in Sources */,
+				290BA730218061CD0021A82A /* GreenViewController.swift in Sources */,
+				290BA70321805EE70021A82A /* ViewController.swift in Sources */,
+				290BA73F218063EF0021A82A /* AppReducer.swift in Sources */,
+				290BA740218063EF0021A82A /* RoutingReducer.swift in Sources */,
+				290BA7422180645A0021A82A /* AppRouter.swift in Sources */,
+				290BA70121805EE70021A82A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA70D21805EE80021A82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290BA71621805EE80021A82A /* RoutingWithReduxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290BA71821805EE80021A82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290BA72121805EE80021A82A /* RoutingWithReduxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		290BA71321805EE80021A82A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290BA6FC21805EE70021A82A /* RoutingWithRedux */;
+			targetProxy = 290BA71221805EE80021A82A /* PBXContainerItemProxy */;
+		};
+		290BA71E21805EE80021A82A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290BA6FC21805EE70021A82A /* RoutingWithRedux */;
+			targetProxy = 290BA71D21805EE80021A82A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		290BA70421805EE70021A82A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290BA70521805EE70021A82A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		290BA70921805EE80021A82A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290BA70A21805EE80021A82A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		290BA72321805EE80021A82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		290BA72421805EE80021A82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		290BA72621805EE80021A82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7130F405843D2B07EADFDE3D /* Pods-RoutingWithRedux.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithRedux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.routing.redux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		290BA72721805EE80021A82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6276624D86C872CB077F1A8 /* Pods-RoutingWithRedux.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithRedux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.routing.redux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		290BA72921805EE80021A82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FCC30B195E54D18767EF8E /* Pods-RoutingWithReduxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.RoutingWithReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutingWithRedux.app/RoutingWithRedux";
+			};
+			name = Debug;
+		};
+		290BA72A21805EE80021A82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098AE9748001D2D60BEF64A8 /* Pods-RoutingWithReduxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.RoutingWithReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutingWithRedux.app/RoutingWithRedux";
+			};
+			name = Release;
+		};
+		290BA72C21805EE80021A82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477678D79B6BFA6AE3EBB95D /* Pods-RoutingWithReduxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithReduxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.RoutingWithReduxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutingWithRedux;
+			};
+			name = Debug;
+		};
+		290BA72D21805EE80021A82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE41B3B9FD003AFD2B1FAEC4 /* Pods-RoutingWithReduxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RoutingWithReduxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.RoutingWithReduxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutingWithRedux;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		290BA6F821805EE70021A82A /* Build configuration list for PBXProject "RoutingWithRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290BA72321805EE80021A82A /* Debug */,
+				290BA72421805EE80021A82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290BA72521805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290BA72621805EE80021A82A /* Debug */,
+				290BA72721805EE80021A82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290BA72821805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithReduxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290BA72921805EE80021A82A /* Debug */,
+				290BA72A21805EE80021A82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290BA72B21805EE80021A82A /* Build configuration list for PBXNativeTarget "RoutingWithReduxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290BA72C21805EE80021A82A /* Debug */,
+				290BA72D21805EE80021A82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 290BA6F521805EE70021A82A /* Project object */;
+}
