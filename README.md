@@ -13,9 +13,9 @@ Besides the fact that **Navigation responsibility is split** among ViewControlle
 - [x] Faster compile times
 
 ## Architectures
-* [RoutingWithRedux](https://github.com/Aamirali86/RoutingWithDifferentArchitecture/RoutingWithRedux)
-* [RoutingWithMVVM](https://github.com/Aamirali86/RoutingWithDifferentArchitecture/RoutingWithMVVM)
-* [RoutingWithVIPER](https://github.com/Aamirali86/RoutingWithDifferentArchitecture/RoutingWithVIPER)
+* [RoutingWithRedux](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithRedux)
+* [RoutingWithMVVM](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithMVVM)
+* [RoutingWithVIPER](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithVIPER)
 
 ## Get in touch
 
