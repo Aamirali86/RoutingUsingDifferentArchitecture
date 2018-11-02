@@ -29,15 +29,13 @@ final class AppRouter {
     }
     
     fileprivate func pushViewController(identifier: String, animated: Bool) {
-        let viewController = instantiateViewController(identifier: identifier)
-        let newViewControllerType = type(of: viewController)
-        if let currentVc = navigationController.topViewController {
-            let currentViewControllerType = type(of: currentVc)
-            if currentViewControllerType == newViewControllerType {
+        if let currentVC = navigationController.topViewController {
+            if currentVC.restorationIdentifier == identifier {
                 return
             }
         }
         
+        let viewController = instantiateViewController(identifier: identifier)
         navigationController.pushViewController(viewController, animated: animated)
     }
     
@@ -54,4 +52,3 @@ extension AppRouter: StoreSubscriber {
         pushViewController(identifier: state.navigationState.rawValue, animated: shouldAnimate)
     }
 }
-
