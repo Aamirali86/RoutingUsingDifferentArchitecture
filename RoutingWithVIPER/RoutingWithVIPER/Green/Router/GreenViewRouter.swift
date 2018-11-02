@@ -10,7 +10,7 @@ import UIKit
 
 class GreenViewRouter : GreenViewRouterProtocol {
     
-    func getGreenViewDetailRouter() -> GreenViewController? {
+    static func getGreenViewDetailRouter() -> GreenViewController? {
         guard let greenVC = GreenViewRouter.initializeViewController() as? GreenViewController else { return nil }
         
 //        let presenter = GreenViewPresenter()

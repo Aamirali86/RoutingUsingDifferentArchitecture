@@ -10,13 +10,7 @@ import UIKit
 
 class HomeViewRouter : HomeViewRouterProtocol {
 
-    weak var navigationController: UINavigationController?
-    
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func getHomeViewRouter() -> HomeViewController? {
+    static func getHomeViewRouter() -> HomeViewController? {
         
         guard let homeVC = HomeViewRouter.initializeViewController() as? HomeViewController else { return nil }
         
@@ -26,24 +20,28 @@ class HomeViewRouter : HomeViewRouterProtocol {
         let interactor = HomeViewInteractor()
         presenter.view = homeVC
         presenter.interactor = interactor
-        presenter.router = self
+        presenter.router = HomeViewRouter()
 
         return homeVC
     }
     
-    func presentGreenViewController() {
-        guard let greenDetail = GreenViewRouter().getGreenViewDetailRouter() else {
+    func presentGreenViewController(from view:HomeViewProtocol) {
+        guard
+            let greenDetail = GreenViewRouter.getGreenViewDetailRouter(),
+            let homeVC = view as? HomeViewController else {
             return
         }
-        navigationController?.pushViewController(greenDetail, animated: true)
+        homeVC.navigationController?.pushViewController(greenDetail, animated: true)
 
     }
 
-    func presentRedViewController() {
-        guard let redDetail = RedViewRouter().getRedViewDetailRouter() else {
+    func presentRedViewController(from view:HomeViewProtocol) {
+        guard
+            let redDetail = RedViewRouter.getRedViewDetailRouter(),
+            let homeVC = view as? HomeViewController else {
             return
         }
-        navigationController?.pushViewController(redDetail, animated: true)
+        homeVC.navigationController?.pushViewController(redDetail, animated: true)
 
     }
     

@@ -23,8 +23,8 @@ class BaseRouter {
     }
     
     func presentHomeViewController() {
-        let homeRouter = HomeViewRouter(navigationController: navigationController)
-        guard let homeVC = homeRouter.getHomeViewRouter() else { return }
+        //let homeRouter = HomeViewRouter(navigationController: navigationController)
+        guard let homeVC = HomeViewRouter.getHomeViewRouter() else { return }
         
         navigationController.viewControllers = [homeVC]
         self.window?.rootViewController = navigationController

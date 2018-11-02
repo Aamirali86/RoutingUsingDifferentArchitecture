@@ -21,7 +21,7 @@ protocol GreenViewInteractorProtocol {
 }
 
 protocol GreenViewRouterProtocol {
-    func getGreenViewDetailRouter() -> GreenViewController?
+    static func getGreenViewDetailRouter() -> GreenViewController?
 }
 
 protocol GreenViewInteractorToPresenterProtocol {

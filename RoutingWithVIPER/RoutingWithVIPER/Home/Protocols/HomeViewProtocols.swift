@@ -27,9 +27,9 @@ protocol HomeViewInteractorProtocol {
 }
 
 protocol HomeViewRouterProtocol {
-    func getHomeViewRouter() -> HomeViewController?
-    func presentGreenViewController()
-    func presentRedViewController()
+    static func getHomeViewRouter() -> HomeViewController?
+    func presentGreenViewController(from view:HomeViewProtocol)
+    func presentRedViewController(from view:HomeViewProtocol)
 }
 
 protocol HomeViewInteractorToPresenterProtocol {

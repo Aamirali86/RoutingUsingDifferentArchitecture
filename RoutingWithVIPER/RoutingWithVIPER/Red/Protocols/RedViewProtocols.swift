@@ -21,7 +21,7 @@ protocol RedViewInteractorProtocol {
 }
 
 protocol RedViewRouterProtocol {
-    func getRedViewDetailRouter() -> RedViewController?
+    static func getRedViewDetailRouter() -> RedViewController?
 }
 
 protocol RedViewInteractorToPresenterProtocol {

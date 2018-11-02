@@ -15,11 +15,11 @@ class HomeViewPresenter : HomeViewPresenterProtocol {
     var router: HomeViewRouterProtocol?
     
     func didTapGreenButton() {
-        router?.presentGreenViewController()
+        router?.presentGreenViewController(from: view!)
     }
     
     func didTapRedButton() {
-        router?.presentRedViewController()
+        router?.presentRedViewController(from: view!)
     }
 
 }

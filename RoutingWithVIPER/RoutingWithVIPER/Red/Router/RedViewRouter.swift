@@ -10,7 +10,7 @@ import UIKit
 
 class RedViewRouter : RedViewRouterProtocol {
     
-    func getRedViewDetailRouter() -> RedViewController? {
+    static func getRedViewDetailRouter() -> RedViewController? {
         guard let redVC = RedViewRouter.initializeViewController() as? RedViewController else { return nil }
         
 //        let presenter = RedViewPresenter()
