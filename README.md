@@ -16,10 +16,11 @@ Besides the fact that **Navigation responsibility is split** among ViewControlle
 * [RoutingWithRedux](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithRedux)
 * [RoutingWithMVVM](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithMVVM)
 * [RoutingWithVIPER](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithVIPER)
+* [RoutingWithNavigatpr](https://github.com/Aamirali86/RoutingUsingDifferentArchitecture/tree/master/RoutingWithNavigator)
 
 ## Get in touch
 
 If you have any questions, you can contact me:
 
 - **Email:** aamir-muhammad@hotmail.com
-- **Skype:** mohammadaamirali
+- **Skype:** live:aamir-muhammad
