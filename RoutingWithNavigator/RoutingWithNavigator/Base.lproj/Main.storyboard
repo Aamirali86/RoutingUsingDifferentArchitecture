@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="vil-yk-z2O">
+            <objects>
+                <viewController storyboardIdentifier="HomeNavigator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AWT-cj-Zyk" customClass="HomeViewController" customModule="RoutingWithNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Xm-GG-37W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW4-l9-R6m">
+                                <rect key="frame" x="131.5" y="413" width="151" height="30"/>
+                                <state key="normal" title="Green View Controller"/>
+                                <connections>
+                                    <action selector="pushToGreenView:" destination="AWT-cj-Zyk" eventType="touchUpInside" id="0rb-WP-NB3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-NC-X1X">
+                                <rect key="frame" x="139" y="453" width="136" height="30"/>
+                                <state key="normal" title="Red View Controller"/>
+                                <connections>
+                                    <action selector="pushToRedView:" destination="AWT-cj-Zyk" eventType="touchUpInside" id="Ycx-Pt-V0h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zW4-l9-R6m" firstAttribute="centerY" secondItem="9Xm-GG-37W" secondAttribute="centerY" constant="-20" id="0fe-N2-f3W"/>
+                            <constraint firstItem="zW4-l9-R6m" firstAttribute="centerX" secondItem="9Xm-GG-37W" secondAttribute="centerX" id="PcV-4i-fEq"/>
+                            <constraint firstItem="Rbu-NC-X1X" firstAttribute="centerX" secondItem="9Xm-GG-37W" secondAttribute="centerX" id="XJZ-P8-XLY"/>
+                            <constraint firstItem="Rbu-NC-X1X" firstAttribute="centerY" secondItem="9Xm-GG-37W" secondAttribute="centerY" constant="20" id="z9V-2e-cx8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SYW-3S-e8u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D40-EV-29A" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="123"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="1kv-T6-3s3">
+            <objects>
+                <viewController storyboardIdentifier="GreenNavigator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pzu-Ef-bdT" customClass="GreenViewController" customModule="RoutingWithNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z1S-Fn-e4b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44w-q2-0Wu">
+                                <rect key="frame" x="98" y="433.5" width="218" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41137476090000002" green="0.72542968750000003" blue="0.41690590449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="44w-q2-0Wu" firstAttribute="centerY" secondItem="Z1S-Fn-e4b" secondAttribute="centerY" id="TJN-48-68l"/>
+                            <constraint firstItem="44w-q2-0Wu" firstAttribute="centerX" secondItem="Z1S-Fn-e4b" secondAttribute="centerX" id="thY-PD-3yG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Ce-bE-5l7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaV-I5-fIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="126"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="hXk-F2-qDz">
+            <objects>
+                <viewController storyboardIdentifier="RedNavigator" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1px-06-1jD" customClass="RedViewController" customModule="RoutingWithNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ba9-91-fpc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukR-1m-Jet">
+                                <rect key="frame" x="108.5" y="433.5" width="197" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28735074630000002" blue="0.1860593213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ukR-1m-Jet" firstAttribute="centerY" secondItem="ba9-91-fpc" secondAttribute="centerY" id="R30-Hh-Z3Z"/>
+                            <constraint firstItem="ukR-1m-Jet" firstAttribute="centerX" secondItem="ba9-91-fpc" secondAttribute="centerX" id="RLA-hb-6Zk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5op-0j-jvv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynp-6o-vAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="123"/>
+        </scene>
+    </scenes>
+</document>
