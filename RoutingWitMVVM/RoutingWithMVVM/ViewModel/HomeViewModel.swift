@@ -14,15 +14,15 @@ protocol HomeViewModelCoordinatorDelegate {
 }
 
 class HomeViewModel {
-    
-    var coordinatorDelegate:HomeViewModelCoordinatorDelegate?
-    
+
+    var coordinatorDelegate: HomeViewModelCoordinatorDelegate?
+
     func didTapGreenButton() {
         coordinatorDelegate?.didTapGreenButton()
     }
-    
+
     func didTapRedButton() {
         coordinatorDelegate?.didTapRedButton()
     }
-    
+
 }

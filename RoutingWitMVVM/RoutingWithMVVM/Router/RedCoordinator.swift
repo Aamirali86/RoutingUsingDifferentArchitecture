@@ -8,13 +8,13 @@
 
 import UIKit
 
-class RedCoordinator : Coordinator, Initializable {
+class RedCoordinator: Coordinator, Initializable {
     weak var navigationController: UINavigationController!
-    
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     func start() {
         let redVC = RedCoordinator.initializeViewController()
         navigationController.pushViewController(redVC, animated: true)

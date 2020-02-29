@@ -9,14 +9,14 @@
 import UIKit
 import Foundation
 
-class AppCoordinator : Coordinator {
+class AppCoordinator: Coordinator {
     weak var window: UIWindow?
     var homeCoordinator: HomeCoordinator!
 
     init(window: UIWindow) {
         self.window = window
     }
-    
+
     func start() {
         homeCoordinator = HomeCoordinator(window: window!)
         homeCoordinator.start()

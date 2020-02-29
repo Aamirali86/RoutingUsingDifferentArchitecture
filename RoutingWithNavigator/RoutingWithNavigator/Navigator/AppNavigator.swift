@@ -11,7 +11,7 @@ import UIKit
 struct AppNavigator: Navigator {
     enum Destination {
         case home
-        
+
         var identifier: String {
             switch self {
             default:
@@ -19,13 +19,13 @@ struct AppNavigator: Navigator {
             }
         }
     }
-    
+
     private var window: UIWindow?
-    
+
     init(window: UIWindow?) {
         self.window = window
     }
-    
+
     func navigate(to destination: Destination) {
         let vc = HomeNavigator.initializeViewController(storyboardIdentifier: destination.identifier)
         window?.rootViewController = UINavigationController(rootViewController: vc)

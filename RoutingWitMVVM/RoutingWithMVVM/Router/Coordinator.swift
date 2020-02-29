@@ -13,10 +13,10 @@ protocol Coordinator {
 }
 
 extension UIStoryboard {
-    enum Name:String {
+    enum Name: String {
         case main = "Main"
     }
-    
+
 }
 
 protocol Initializable where Self: Coordinator {
@@ -24,15 +24,15 @@ protocol Initializable where Self: Coordinator {
 }
 
 extension Initializable where Self: Coordinator {
-    
+
     static var storyboardIdentifier: String {
         return String(describing: self)
     }
-    
+
     static var storyboardName: String {
         return UIStoryboard.Name.main.rawValue
     }
-    
+
     static func initializeViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let instance = storyboard.instantiateViewController(withIdentifier: storyboardIdentifier)

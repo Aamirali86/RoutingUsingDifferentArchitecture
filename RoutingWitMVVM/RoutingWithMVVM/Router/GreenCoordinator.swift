@@ -8,16 +8,16 @@
 
 import UIKit
 
-class GreenCoordinator : Coordinator, Initializable {
+class GreenCoordinator: Coordinator, Initializable {
     weak var navigationController: UINavigationController!
-    
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     func start() {
         let greenVC = GreenCoordinator.initializeViewController()
         navigationController.pushViewController(greenVC, animated: true)
     }
-    
+
 }
